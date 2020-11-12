@@ -23,10 +23,10 @@ function marry(person1, person2) {
   return `${person1} is now married to ${person2}`
 }
 
-function marry2(...args) {
-  console.log(args)
+function marry2(...args) { //rest parameter
+  console.log('arguments', args)
   console.log(Array.from(arguments))
-  return `${person1} is now married to ${person2}`
+  return `${args[0]} is now married to ${args[1]}`
 }
 
 marry('Tim', 'Tina')
